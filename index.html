@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="light">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YazawaLiner LLC. Rules</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="googoo gaga">
+    <meta name="description" content="nico nico niiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii">
     <!-- Tailwind CSS CDN for styling -->
     <!-- this is a crime -->
     <!-- btw this layout is vibed, otherwise i'd go the hard way of styling manually because they advised us against doing this in prod -->
@@ -92,7 +93,8 @@
 
         <div class="bg-container border rounded-xl shadow-sm p-6 sm:p-8 lg:p-10 transition-colors duration-300">
             <!-- Example content area -->
-            <h1 class="text-3xl font-bold mb-4">YazawaLiner Company* Rules</h1>
+            <audio id="easter-audio" src="assets/niconiconii.mp3" style="display: none;"></audio>
+            <h1 class="text-3xl font-bold mb-4"><span id="easter">Yazawa</span>Liner Company* Rules</h1>
             <p class="mb-4">
                 To stick to the mission of spreading <a href="https://love-live.antifandom.com/wiki/Nico_Yazawa" class="text-blue-600 dark:text-blue-400 hover:underline">Nico</a>'s cuteness around the world (and across Japan, i think), there are some rules applied to make the process happens as efficient and consistent as possible, while still abiding to the rules of <a href="https://wplace.live" class="text-blue-600 dark:text-blue-400 hover:underline">wplace</a> (which you should read btw)
             </p>
@@ -156,6 +158,29 @@
     </div>
 
     <script>
+        // Get a reference to the button element using its ID.
+        const playButton = document.getElementById('easter');
+
+        // Get a reference to the audio element using its ID.
+        const audioPlayer = document.getElementById('easter-audio');
+
+        // Check if the elements were found before adding the event listener.
+        if (playButton && audioPlayer) {
+            // Add a 'click' event listener to the button.
+            // The code inside this function will run whenever the button is clicked.
+            playButton.addEventListener('click', () => {
+                // Play the audio.
+                // Note: Browser autoplay policies may require a user gesture (like a click) to start playback.
+                // This script respects that by playing the audio only after a click.
+                audioPlayer.play()
+                .catch(error => {
+                    // Handle potential errors, such as a user denying playback.
+                    console.error("Error playing audio:", error);
+                    // You could add a message box here to alert the user.
+                    // For example: `document.getElementById('message-box').innerText = 'Could not play sound.';`
+                });
+            });
+        }
         const themeToggle = document.getElementById('theme-toggle');
         const sunIcon = document.getElementById('sun-icon');
         const moonIcon = document.getElementById('moon-icon');
