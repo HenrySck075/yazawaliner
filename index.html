@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YazawaLiner LLC. Rules</title>
+    <meta name="description" content="googoo gaga">
+    <!-- Tailwind CSS CDN for styling -->
+    <!-- this is a crime -->
+    <!-- btw this layout is vibed, otherwise i'd go the hard way of styling manually because i read the docs (wrong) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define the 'Inter' font and apply it to the body */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Define colors for light and dark themes using CSS variables */
+        :root {
+            --bg-color-light: #f8f9fa;
+            --text-color-light: #212529;
+            --container-bg-light: #ffffff;
+            --border-color-light: #dee2e6;
+
+            --bg-color-dark: #121212;
+            --text-color-dark: #e0e0e0;
+            --container-bg-dark: #1e1e1e;
+            --border-color-dark: #3a3a3a;
+        }
+
+        /* Set styles for the light theme */
+        .light {
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+        }
+
+        .light .bg-container {
+            background-color: var(--container-bg-light);
+            border-color: var(--border-color-light);
+        }
+        
+        /* Set styles for the dark theme */
+        .dark {
+            background-color: var(--bg-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        .dark .bg-container {
+            background-color: var(--container-bg-dark);
+            border-color: var(--border-color-dark);
+        }
+
+        /* Style for code blocks */
+        pre {
+            background-color: rgba(0,0,0,0.1);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body class="light">
+    <!-- Main content container -->
+    <div class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        
+        <!-- Theme toggle button -->
+        <div class="flex justify-end mb-6">
+            <button id="theme-toggle" class="p-2 rounded-full border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <svg id="sun-icon" class="w-6 h-6 text-yellow-500 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <svg id="moon-icon" class="w-6 h-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="bg-container border rounded-xl shadow-sm p-6 sm:p-8 lg:p-10 transition-colors duration-300">
+            <!-- Example content area -->
+            <h1 class="text-3xl font-bold mb-4">YazawaLiner Company Rules</h1>
+            <p>
+                To stick to the mission of spreading <a href="https://love-live.antifandom.com/wiki/Nico_Yazawa">Nico</a>'s cuteness around the world (and across Japan, i think), there are some rules applied to make the process happens as efficient and consistent as possible, while still abiding to the rules of <a href="https://wplace.live">wplace</a> (which you should read btw)
+            </p>
+            <p class="mb-4">
+                Note that this is <b>not</b> meant to be comprehensive nor set in stone. These rules may change depending on whatever is happening at any given time, or if I feel like there's something more to clarify.
+            </p>
+
+            <h1 class="text-2xl font-semibold mt-8 mb-3">Rules</h1>
+           
+            <ul class="list-disc list-inside space-y-2">
+                <li>
+                    Use pink. It's Love Live! after all.
+                    <ul><li>aka pink is preferred when building the line, but you're free to use any other colors if you like (pink should still be prominent tho)</li></ul>
+                </li>
+                <li>go in a straight horizontal line. This is optional but make sure you never make it go left.</li>
+                <img src="assets/false advertisement this is not a straight line.png" class="w-full rounded-md shadow-lg">
+                <li>
+                    Drawing over other works <b>should be kept at the minimum.</b>
+                    <ul>
+                        <li><i>This does not apply to works established on area that we've gone over long ago, it's their job deciding what to do with it but you're free to go against it lmao</i></li>
+                        <li>This does not mean it is outright banned, but only do so if it can be incorporated with the works in question.</li>
+                        <li>Otherwise, spawn a portal or go around them. Here's how you can do it:</li>
+                        <div class="flex flex-wrap -mx-2">
+                            <!-- Image 1 -->
+                            <div class="w-full sm:w-1/2 p-2">
+                                <figure>
+                                    <img src="assets/portal references.png" alt="Going around using a portal." class="w-full rounded-md shadow-lg">
+                                    <figcaption class="mt-2 text-center text-sm">Going around using a portal.</figcaption>
+                                </figure>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="w-full sm:w-1/2 p-2">
+                                <figure>
+                                    <img src="assets/nesoberi.png" alt="Going around in its literal meaning." class="w-full rounded-md shadow-lg">
+                                    <figcaption class="mt-2 text-center text-sm">...or by literally going around them</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>Have fun! And apply for the engineering role <a href="https://wplace.live/join?id=0198a672-4d20-7cb4-961d-2742d51c4b19">here!</a></p>
+            <p class="mb-4 text-md">dm to henrysck075 if you want to add something to the rules or just want to see me (not even trying to) shapeshift into school idols on their birthdays or see updates on projects that will be put on pause after about 3 months at minimum</p>
+
+<!--
+            <blockquote class="border-l-4 border-gray-400 pl-4 py-2 my-4 italic">
+                "This is an example of a blockquote. It's great for pulling out important text or quotes from a source."
+            </blockquote>
+-->
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const body = document.body;
+
+        // Check for saved theme preference in local storage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            body.classList.replace('light', currentTheme);
+            updateIcon(currentTheme);
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light')) {
+                body.classList.replace('light', 'dark');
+                localStorage.setItem('theme', 'dark');
+                updateIcon('dark');
+            } else {
+                body.classList.replace('dark', 'light');
+                localStorage.setItem('theme', 'light');
+                updateIcon('light');
+            }
+        });
+
+        // Function to update the visible icon
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            } else {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
