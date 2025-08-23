@@ -6,96 +6,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 div#e {
-    @apply bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-lg p-6 shadow-md;
+  @apply bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-lg p-6 shadow-md;
 }
 
 body {
-    @apply transition-colors duration-300;
-    font-family: 'Inter', sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Define colors for light and dark themes using CSS variables */
 :root {
-    --bg-color-light: #f8f9fa;
-    --text-color-light: #212529;
-    --container-bg-light: #ffffff;
-    --border-color-light: #dee2e6;
+  --bg-color-light: #f8f9fa;
+  --text-color-light: #212529;
+  --container-bg-light: #ffffff;
+  --border-color-light: #dee2e6;
 
-    --bg-color-dark: #121212;
-    --text-color-dark: #e0e0e0;
-    --container-bg-dark: #1e1e1e;
-    --border-color-dark: #3a3a3a;
+  --bg-color-dark: #121212;
+  --text-color-dark: #e0e0e0;
+  --container-bg-dark: #1e1e1e;
+  --border-color-dark: #3a3a3a;
+
+  @apply transition-colors duration-300;
 }
 
 @theme {
-    --color-white-50: /*--text-color-dark*/ oklch(97.5% 0.02 261);
+  --color-white-50: /*--text-color-dark*/ oklch(97.5% 0.02 261);
 }
 
 /* Set styles for the light theme */
 .light {
-    background-color: var(--bg-color-light);
-    color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
 }
 /*
 .light .bg-container {
-    background-color: var(--container-bg-light);
-    border-color: var(--border-color-light);
+  background-color: var(--container-bg-light);
+  border-color: var(--border-color-light);
 }
 */
 /* Set styles for the dark theme */
 .dark {
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
 }
 /*
 .dark .bg-container {
-    background-color: var(--container-bg-dark);
-    border-color: var(--border-color-dark);
+  background-color: var(--container-bg-dark);
+  border-color: var(--border-color-dark);
 }
-    */
+  */
 
 /* Style for code blocks */
 pre {
-    background-color: rgba(0,0,0,0.1);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    overflow-x: auto;
+  background-color: rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
 }
 
 code {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 ul.nested {
-    list-style-type: circle;
-    list-style-position: inside;
-    margin-left: 4px;
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 4px;
 }
 
 select,
 ::picker(select) {
-    appearance: base-select;
+  appearance: base-select;
 }
 
 select > option {
-    @apply bg-white dark:bg-zinc-800 px-2 py-1 text-black dark:text-white-50;
+  @apply bg-white dark:bg-zinc-800 px-2 py-1 text-black dark:text-white-50;
 }
 
 ::picker(select) {
-    @apply border rounded-2xl mt-2;
-    opacity: 0;
-    transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) allow-discrete;
+  @apply border rounded-2xl mt-2;
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) allow-discrete;
 }
 
 ::picker(select):popover-open {
-    opacity: 1;
+  opacity: 1;
 }
 @starting-style {
 
-    ::picker(select):popover-open {
-        opacity: 0;
-    }
+  ::picker(select):popover-open {
+    opacity: 0;
+  }
 }
 
 a {
@@ -103,5 +104,5 @@ a {
 }
 
 p {
-    @apply mb-4;
+  @apply mb-4;
 }

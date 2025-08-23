@@ -34,7 +34,8 @@ jobs:
       - name: Install deps
         run: bun install
       - name: Build Tailwind CSS
-        run: bun x tailwindcss -i ./smoke_tailwind.css -o ./smoke.css --minify
+        run: bun x tailwindcss -i ./smoke_tailwind.css -o ./smoke.css
+        # cant minify because it fucks up the ::picker(select) selector somehow
       - name: Build TypeScript file
         run: bun x tsc
       - name: Build with Jekyll
