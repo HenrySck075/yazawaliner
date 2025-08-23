@@ -29,7 +29,8 @@
     },
     "overdraw-except": "This does not apply to works established over areas that we've gone over long ago, although if they're being deliberately removed (happens quite a lot in chiba) you may restore them",
     "outsider-notice": {
-        "": "{{important}}: To the outsider wanting to do the above, we {{advise-against}} unless there's a valid reason to and avoiding crossing around the line is {{not}} one of them)",
+        "": "({{important}}: To the outsider wanting to do the above, we {{advise-against}} unless there's a valid reason to and avoiding crossing around the line is {{not}} one of them)",
+        "important": "IMPORTANT",
         "advise-against": "advise against doing so",
         "not": "not"
     },

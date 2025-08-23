@@ -83,7 +83,6 @@ function updateIcon(theme: string) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
 const defaultLang = 'en'; // Set your default language
 let currentLang = localStorage.getItem('lang') ?? defaultLang;
 
@@ -101,10 +100,11 @@ async function setLanguage(lang: string) {
   
   elementsToTranslate.forEach(element => {
     const key = element.getAttribute('data-i18n')!;
+    let translationApplied = false;
     if (translations[key]) {
       const g = translations[key];
       if (typeof g === "string") {
-        element.innerHTML = g;
+        element.insertAdjacentHTML("afterbegin", g);
       } else {
         if (!Object.keys(g).includes("")) {
           console.error(`Translation key ${key} does not have the main translation text available (as the value for the key "").`)
@@ -112,16 +112,20 @@ async function setLanguage(lang: string) {
         }
         // find all instance of {{([a-zA-Z0-9]*)}} in g[""], then for each matches, find a child element with the data-i18n-inline attr of that value and return the matched element's html content
         // use replaceAll i think
-        element.innerHTML = g[""].replaceAll(/{{([a-zA-Z0-9-_]*)}}/g, (sub, one)=>{
+        element.insertAdjacentHTML("afterbegin", g[""].replaceAll(/{{([a-zA-Z0-9-_]*)}}/g, (sub, one)=>{
           const inlineElement = element.querySelector(`[data-i18n-inline="${one}"]`);
           if (inlineElement) {
-            return inlineElement.outerHTML;
+            inlineElement.textContent = g[one];
+            const html = inlineElement.outerHTML;
+            inlineElement.remove();
+            return html;
           } else {
             console.warn(`Inline translation key ${one} not found in element with data-i18n="${key}".`);
             return sub; // return the original match if not found
           }
-        })
+        }));
       }
+      translationApplied =  true;
     }
   });
   currentLang = lang;
@@ -143,4 +147,3 @@ setLanguage(defaultLang);
 document.getElementById('lang-en-btn')?.addEventListener('click', () => setLanguage('en'));
 document.getElementById('lang-es-btn')?.addEventListener('click', () => setLanguage('es'));
 */
-});
