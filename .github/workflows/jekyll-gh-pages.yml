@@ -29,6 +29,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Setup Node (actually Bun because lel)
+        uses: oven-sh/setup-bun@v2
+      - name: Install deps
+        run: bun install
+      - name: Build Tailwind CSS
+        run: bun x tailwindcss -i ./smoke_tailwind.css -o ./smoke.css --minify
+      - name: Build TypeScript file
+        run: bun x tsc
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

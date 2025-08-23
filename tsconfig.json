@@ -1,0 +1,17 @@
+// configure to only compile script.ts and outputs to _site
+{
+  "compilerOptions": {
+    "target": "es2024",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./",
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+  },
+  "include": ["script.ts", "src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

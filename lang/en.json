@@ -1,0 +1,48 @@
+{
+    "__comment__": "The key names are the value of the data-i18n attribute that you want to add translation to",
+    "__comment_2__": "The values can be a string or an object of sub-keys for inline styles",
+    "__comment_3__": "im sucks at describing so take a look at this file to understand what it does",
+    "info": {
+        "": "To stick to the mission of spreading {{Nico}}'s cuteness around the world (and across Japan, i think), there are some rules applied to make the process happens as efficient and consistent as possible, while still abiding to the rules of {{wplace}} (which you should read btw)",
+        "Nico": "Nico",
+        "wplace": "wplace"
+    },
+    "warning": {
+        "": "Note that this is {{not}} meant to be comprehensive nor set in stone. These rules may change depending on whatever is happening at any given time, or if I feel like there's something more to clarify.",
+        "not": "not"
+    },
+    "tip": "Pro tip: use the headquarters location to teleport to the furthest point :D",
+    "rules-header": "Rules",
+    "mandatory-rules-header": "Very Important Things",
+    "use-pink-color": "Use pink. It's Love Live! after all.",
+    "use-pink-details": "aka pink is preferred when building the line, but you're free to use any other colors if you like (pink should still be prominent tho)",
+    "construct-straight-line-only": "Go in a straight horizontal line. This is optional but make sure you never make it head west by any means.",
+    "how-to-nico-nico-nii": {
+        "": "The \"i\" is 1 tile wide, and is built as a 1 tile, followed by 1 spacing tile, and 4 tiles tall structure"
+    },
+    "i-details-spacing": "Each letters is spaced by 1 (I) (one) (un) (uno) (一つ) (一) (um) (하나) (một) (bir) tile do not space it by 2 tiles i've seen it happening twice (last time i said it cancels out, right? now dont do it.)",
+    "i-details-spacing-fix-notice": "If you found one then please realign it thank you",
+    "not-mandatory-rules-header": "Also Very Important Things",
+    "drawing-over-other-artworks": {
+        "": "Drawing over other works {{kept-at-minimum}}",
+        "kept-at-minimum": "should be kept at the minimum."
+    },
+    "overdraw-except": "This does not apply to works established over areas that we've gone over long ago, although if they're being deliberately removed (happens quite a lot in chiba) you may restore them",
+    "outsider-notice": {
+        "": "{{important}}: To the outsider wanting to do the above, we {{advise-against}} unless there's a valid reason to and avoiding crossing around the line is {{not}} one of them)",
+        "advise-against": "advise against doing so",
+        "not": "not"
+    },
+    "overdraw-is-not-a-ban": "This does not mean it is outright banned, but only do so if it can be incorporated with the works in question.",
+    "overdraw-workaround": "Otherwise, go around them. Here's how you can do it:",
+    ":D": {
+        "": "Have fun! And apply for the engineering role",
+        "alliance-hyperlink": "here!"
+    },
+    "notes-1": "* a wplace alliance",
+    "notes-2": {
+        "": "** you can also open an {{gh-issues}} to discuss or change the rules. A {{gh-pulls}} for translation is also welcome!",
+        "gh-issues": "issue",
+        "gh-pulls": "pull request"
+    }
+}
