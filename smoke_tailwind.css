@@ -106,3 +106,7 @@ a {
 p {
   @apply mb-4;
 }
+
+figcaption {
+  @apply mt-2 text-center text-sm;
+}

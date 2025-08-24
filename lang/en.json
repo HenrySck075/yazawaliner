@@ -1,7 +1,4 @@
 {
-    "__comment__": "The key names are the value of the data-i18n attribute that you want to add translation to",
-    "__comment_2__": "The values can be a string or an object of sub-keys for inline styles",
-    "__comment_3__": "im sucks at describing so take a look at this file to understand what it does",
     "info": {
         "": "To stick to the mission of spreading {{Nico}}'s cuteness around the world (and across Japan, i think), there are some rules applied to make the process happens as efficient and consistent as possible, while still abiding to the rules of {{wplace}} (which you should read btw)",
         "Nico": "Nico",
@@ -36,6 +33,9 @@
     },
     "overdraw-is-not-a-ban": "This does not mean it is outright banned, but only do so if it can be incorporated with the works in question.",
     "overdraw-workaround": "Otherwise, go around them. Here's how you can do it:",
+    "ow-hint-portal": "Use a portal to skip",
+    "ow-hint": "...or just literally going around them",
+    "ow-hint-dash": "...or the uhhhhhhhhhhhhhhh",
     ":D": {
         "": "Have fun! And apply for the engineering role",
         "alliance-hyperlink": "here!"

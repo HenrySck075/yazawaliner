@@ -83,20 +83,20 @@ function updateIcon(theme: string) {
   }
 }
 
-const defaultLang = 'en'; // Set your default language
+const defaultLang = 'en';
 let currentLang = localStorage.getItem('lang') ?? defaultLang;
 
-// Get the elements to be translated
 const elementsToTranslate = document.querySelectorAll('[data-i18n]');
 
-// Function to fetch and apply translations
+type Translations = Record<string, string | Record<string, string>>;
+
 async function setLanguage(lang: string) {
   try {
   const response = await fetch(`lang/${lang}.json`);
   if (!response.ok) {
     throw new Error(`Failed to load translation for ${lang}`);
   }
-  const translations: Record<string, string | Record<string, string>> = await response.json();
+  const translations: Translations = await response.json();
   
   elementsToTranslate.forEach(element => {
     const key = element.getAttribute('data-i18n')!;
@@ -137,13 +137,4 @@ async function setLanguage(lang: string) {
   }
   }
 }
-
-// You can call this function to set the language on page load
 setLanguage(defaultLang);
-
-/*
-// Example: Add a language switcher
-// You would have buttons or a dropdown in your HTML for this
-document.getElementById('lang-en-btn')?.addEventListener('click', () => setLanguage('en'));
-document.getElementById('lang-es-btn')?.addEventListener('click', () => setLanguage('es'));
-*/
