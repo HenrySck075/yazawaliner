@@ -33,9 +33,10 @@
     },
     "overdraw-is-not-a-ban": "This does not mean it is outright banned, but only do so if it can be incorporated with the works in question.",
     "overdraw-workaround": "Otherwise, go around them. Here's how you can do it:",
-    "ow-hint-portal": "Use a portal to skip",
-    "ow-hint": "...or just literally going around them",
-    "ow-hint-dash": "...or the uhhhhhhhhhhhhhhh",
+    "ow-hint-1": "Use a portal to skip",
+    "ow-hint-2": "...or just literally going around them",
+    "ow-hint-3": "...or the uhhhhhhhhhhhhhhh",
+    "ow-hint-4": "HOLY MOLY THIS IS SO COOL WHAAT",
     "hav-fun": {
         "": "Have fun! And apply for the engineering role",
         "alliance-hyperlink": "here!"
