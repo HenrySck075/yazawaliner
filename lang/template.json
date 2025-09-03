@@ -1,5 +1,5 @@
 {
-    "__comment__": "The key names are the value of the data-i18n attribute that you want to add translation to",
+    "__comment_1__": "The key names are the value of the data-i18n attribute that you want to add translation to",
     "__comment_2__": "The values can be a string or an object of sub-keys for inline styles",
     "__comment_3__": "im sucks at describing so take a look at this file to understand what it does",
     "info": {
@@ -14,6 +14,7 @@
     "tip": "",
     "rules-header": "",
     "mandatory-rules-header": "",
+    "transparent-exists": "",
     "use-pink-color": "",
     "use-pink-details": "",
     "construct-straight-line-only": "",

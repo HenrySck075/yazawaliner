@@ -33,6 +33,10 @@ body {
   --color-white-50: /*--text-color-dark*/ oklch(97.5% 0.02 261);
 }
 
+img {
+  @apply w-full rounded-md shadow-lg;
+}
+
 /* Set styles for the light theme */
 .light {
   background-color: var(--bg-color-light);
